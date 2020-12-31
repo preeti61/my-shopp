@@ -1,0 +1,41 @@
+.signinform{
+    max-width:55rem;
+    width: 100%;
+}
+.signinform>div{
+    display: flex;
+     flex-direction: column;
+     margin:1rem;
+}
+.input>input{
+    width:inherit;
+    padding:1rem;
+    border:0.1rem solid grey;
+}
+.dropdown{
+    display: inline block;
+    position: relative;
+    
+}
+.dropdown-content{
+   position:absolute;
+   display:none;
+   min-width: 12rem;
+   margin: 0;
+   right:0;
+   z-index: 1;
+   margin-top:0.1rem;
+   padding:1rem;
+   background-color: #203040 ;
+}
+.dropdown:hover .dropdown-content{
+display:block;
+}
+@media screen and (max-width:680px){
+    .signinform{
+        max-width:100%;
+    }
+    .input>input{
+        max-width:600px;
+    }
+}

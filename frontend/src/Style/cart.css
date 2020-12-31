@@ -1,0 +1,36 @@
+.row{
+    display:flex;
+}
+.col-1{
+   flex:3;
+   margin:auto 5rem;
+  
+}
+.col-2{
+    flex:1;
+    margin:auto 5rem;
+   
+}
+img.small{
+    max-width: 20rem;
+    width:100%;
+    margin:auto;
+    padding: 0.5rem;
+}
+.cartItem{
+   border:1px solid black;
+}
+.cartItems{
+    border-radius: 25%;
+    background:#f02020;
+    color:white;
+  }
+  .cartButton{
+      border-radius: 10%;
+  }
+  button.medium{
+      max-width:  20rem;
+      margin:auto;
+  }
+
+  
