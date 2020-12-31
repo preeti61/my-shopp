@@ -28,6 +28,10 @@ app.get('/',(req,res)=>{
     res.send("Server Ready")
 })
 
+if(process.env.NODE_ENV==='production')
+{
+  app.use(express.static('frontend/public'))
+}
 
 app.listen(port,()=>{
     console.log("server is up at port 5000")

@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node backend/server.js"
+    "start":"node backend/server.js",
+    "build":"cd frontend && npm start",
+    "install-client": "cd frontend && npm install",
+    "heroku-postbuild":"npm run install-client && npm run build"
   },
   "repository": {
     "type": "git",
