@@ -18,14 +18,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/preeti61/My Shopp.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/preeti61/My Shopp/issues"
-  },
-  "homepage": "https://github.com/preeti61/My Shopp#readme"
+  "license": "ISC"
 }
