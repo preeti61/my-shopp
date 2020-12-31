@@ -4,19 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"npm install && node backend/server.js",
+    "start":"npm init && node backend/server.js",
     "build":"cd frontend && npm start",
-    "install-client": "cd frontend && npm install",
+    "install-client": "cd frontend && npm init",
     "heroku-postbuild":"npm start && npm run install-client && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/preeti61/my-shopp.git"
+    "url": "git+https://github.com/preeti61/My-Shopp.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/preeti61/my-shopp/issues"
+    "url": "https://github.com/preeti61/My-Shopp/issues"
   },
-  "homepage": "https://github.com/preeti61/my-shopp#readme"
+  "homepage": "https://github.com/preeti61/My-Shopp#readme"
 }
