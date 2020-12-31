@@ -7,7 +7,7 @@
     "start":"node backend/server.js",
     "build":"cd frontend && npm start",
     "install-client": "cd frontend && npm install",
-    "heroku-postbuild":"npm run install-client && npm run build"
+    "heroku-postbuild":"npm start && npm run install-client && npm run build"
   },
   "repository": {
     "type": "git",
