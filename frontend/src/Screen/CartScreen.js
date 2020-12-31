@@ -1,4 +1,4 @@
-import { PromiseProvider } from 'mongoose';
+
 import React,{useEffect, useState} from 'react';
 import {addtoCart,removeFromCart} from '../actions/cart'
 import { useDispatch,useSelector } from 'react-redux';
