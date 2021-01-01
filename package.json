@@ -8,9 +8,9 @@
   },
   "scripts": {
     "start":" node backend/server.js",
-    "build":"cd frontend && npm install && npm start",
+    "build":"cd frontend && npm install && npm build",
     "install-client": "npm install",
-    "heroku-postbuild":" npm run install-client && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
   "repository": {
     "type": "git",
