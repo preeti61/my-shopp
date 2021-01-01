@@ -8,8 +8,8 @@
   },
   "scripts": {
     "start":" node backend/server.js",
-    "build":"cd frontend && npm start",
-    "install-client": "cd frontend && npm init",
+    "build":"cd frontend && npm install",
+    "install-client": "npm install",
     "heroku-postbuild":" npm run install-client && npm run build"
   },
   "repository": {
