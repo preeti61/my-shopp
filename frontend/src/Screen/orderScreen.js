@@ -58,7 +58,7 @@ export default(props)=>{
                        <h1>₹{sum}</h1>
                        </div>
                        
-                       <Link to={"/signin?redirect=shipping"}><button className="primary  " onClick={placeorderHandler}>Place Order</button></Link>
+                       <button className="primary  " onClick={placeorderHandler}>Place Order</button>
                        
                    </div>
               </main>
