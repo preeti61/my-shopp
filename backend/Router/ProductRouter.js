@@ -1,13 +1,14 @@
 const express=require('express');
 const data=require('../data.js');
 const {ObjectId}=require('mongodb')
-const Product=require('../Models/Productmodel');
+const Product=require('../Models/Productmodel.js');
 const productRouter=express.Router();
 
 
 productRouter.get('/',async(req,res)=>{
     try{
          const products=await Product.find({});
+       
          res.send(products);
     }
     catch(e)
@@ -16,17 +17,17 @@ productRouter.get('/',async(req,res)=>{
     }
 })
 productRouter.get('/seed',async(req,res)=>{
+
     try{
-           
         const createdProduct=await Product.insertMany(data.Products);
-        res.send({createdProduct})
+        console.log(createdProduct)
+        res.send({createdProduct});
     }
     catch(e)
     {
         res.status(500).send({error:e.message})
     }
-   
-
+    
 })
 productRouter.get('/:id',async(req,res)=>{
   

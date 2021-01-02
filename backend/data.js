@@ -11,6 +11,12 @@ const data={
         email:"rahulrautela9675@gmail.com",
         password:bcrypt.hashSync('8888',8),
         isAdmin:false
+    },
+    {
+        name:"Prakriti",
+        email:"prakriti1234@gmail.com",
+        password:bcrypt.hashSync('9088',8),
+        isAdmin:false
     }
 ],
     Products:[
