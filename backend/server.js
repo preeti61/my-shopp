@@ -1,7 +1,7 @@
 const express =require('express');
 const dotenv=require('dotenv');
 dotenv.config();
-const port=process.env.PORT||5000
+const port=process.env.PORT
 const app=express();
 
 const User=require('./Models/Usermodel.js')

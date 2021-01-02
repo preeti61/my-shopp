@@ -32,7 +32,7 @@ export const detailsProduct=(productId)=>{
         })
         try{
             const data=await axios.get(`/api/products/${productId}`);
-            
+            console.log(data)
             dispatch({
                 type:PRODUCT_SUCCESS,
                 payload:data

@@ -15,6 +15,7 @@ export default(props)=>{
     const placeorderHandler=(e)=>{
         e.preventDefault();
         dispatch(createOrder({orderItems:cartInfo.cartItem,shippingAddress:cartInfo.ShippingAddress,totalPrice:sum}));
+    
         props.history.push('/cart') 
     }
     return(
@@ -36,7 +37,7 @@ export default(props)=>{
                                          <img className="small" src={x.image}/>
                                         </div>
                                     <div className="col-1">
-                                     <Link to={`/api/products/${x._id}`}>{x.name}</Link>
+                                    <Link to={`api/products/${x._id}`}>{x.name}</Link>
                                         </div>
                                         <div className="col-1">
                                      <div>{x.qty*x.price}</div>

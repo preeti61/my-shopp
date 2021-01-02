@@ -13,7 +13,8 @@ export default (props)=>{
         <img className="small" src={props.x.image}/>
       </div>
       <div className="col-1">
-       <Link to={`/api/products/${props.x._id}`}>{props.x.name}</Link>
+        
+       <p>{props.x.name}</p>
       </div>
       <div className="col-2">
       <select value={qty} onChange={(e)=>{
