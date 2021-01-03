@@ -10,9 +10,7 @@ const userRouter=require('./Router/UserRouter.js');
 const productRouter=require('./Router/ProductRouter.js');
 const orderRouter=require('./Router/OrderRouter.js');
 const mongoose =require('mongoose');
-app.get('/',(req,res)=>{
-  res.send('server Ready')
-})
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 mongoose.connect(process.env.MONGODB_URL,
