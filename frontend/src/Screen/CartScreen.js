@@ -1,6 +1,6 @@
 
-import React,{useEffect, useState} from 'react';
-import {addtoCart,removeFromCart} from '../actions/cart'
+import React,{useEffect} from 'react';
+import {addtoCart} from '../actions/cart'
 import { useDispatch,useSelector } from 'react-redux';
 import CartItem from '../MainPage/cartItem';
 import Message from '../MainPage/Message';

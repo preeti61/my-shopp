@@ -13,8 +13,8 @@ import SigninScreen from './Screen/Signin'
 import CartScreen from './Screen/CartScreen';
 import RegisterForm from './Screen/register';
 import ShippingScreen from './Screen/Shipping';
-import OrderScreen from './Screen/orderScreen';
-import orderHistory from './Screen/orderHistory';
+import OrderScreen from './Screen/OrderScreen';
+
 const Routes=()=>{
   const userSignin=useSelector(state=>state.userSignin)
   const {userInfo}=userSignin;
@@ -32,7 +32,6 @@ const Routes=()=>{
        <Route path="/register" component={RegisterForm} exact={true}/>
        <Route path="/shipping" component={ShippingScreen} exact={true}/>
        <Route path="/orderScreen" component={OrderScreen} exact={true}/>
-       <Route path="/orderHistory" component={orderHistory}/>
     </Switch>
     <Footer/>
   </div>

@@ -1,5 +1,4 @@
-import axios from 'axios';
-const defaultState={products:[],error:undefined}
+import axios from 'axios';const defaultState={products:[],error:undefined}
 export default (state=defaultState,action)=>{
   
     switch(action.type)

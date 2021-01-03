@@ -2,7 +2,7 @@ import React from 'react';
 import Rating from './rating'
 import {Link} from 'react-router-dom'
 const Product=(props)=>{
-    const {_id,name,brand,image,price,rating}=props.product;
+    const {_id,name,image,price,rating}=props.product;
 return(
      
        <div className="card">

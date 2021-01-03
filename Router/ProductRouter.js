@@ -20,7 +20,7 @@ productRouter.get('/seed',async(req,res)=>{
 
     try{
         const createdProduct=await Product.insertMany(data.Products);
-        console.log(createdProduct)
+    
         res.send({createdProduct});
     }
     catch(e)

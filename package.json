@@ -1,31 +1,22 @@
 {
-  "name": "ecommerce",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "data.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.9",
     "validator": "^13.5.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node backend/server.js",
-    "build": "cd frontend && npm start",
-    "install-client": "cd frontend && npm install",
-    "heroku-postbuild": "npm install && npm run install-client && npm run build "
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/preeti61/My-Shopp.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/preeti61/My-Shopp/issues"
-  },
-  "homepage": "https://github.com/preeti61/My-Shopp#readme"
+  }
 }

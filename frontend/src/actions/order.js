@@ -1,5 +1,4 @@
-
-const Axios =require( "axios");
+import Axios from 'axios';
 
  const createOrder=(order)=>async(dispatch,getState)=>{
     dispatch({
@@ -53,4 +52,4 @@ const Axios =require( "axios");
     }
     
 }
-module.exports={createOrder,getOrder}
+export {createOrder,getOrder}

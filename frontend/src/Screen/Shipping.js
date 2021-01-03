@@ -14,7 +14,7 @@ export default(props)=>{
        const state=e.target.elements.state.value;
        const country=e.target.elements.country.value;
        dispatch(saveShippingAddress({name,address,city,pincode,state,country}))
-       props.history.push('/OrderScreen');
+       props.history.push('/orderScreen');
    }
     return(
         <div>
