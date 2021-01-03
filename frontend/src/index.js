@@ -13,7 +13,7 @@ import SigninScreen from './Screen/Signin'
 import CartScreen from './Screen/CartScreen';
 import RegisterForm from './Screen/register';
 import ShippingScreen from './Screen/Shipping';
-import OrderScreen from './Screen/OrderScreen';
+import OrderScreen from './Screen/orderScreen';
 
 const Routes=()=>{
   const userSignin=useSelector(state=>state.userSignin)
