@@ -18,23 +18,23 @@ mongoose.connect(process.env.MONGODB_URL,
   useUnifiedTopology:true,
   useNewUrlParser:true
 });
-
-
-   
-  
 app.use('/api/users',userRouter);
 app.use('/api/products',productRouter);
 app.use('/api/order',orderRouter);
 
-const port=process.env.PORT||5000;
 
-if(process.env.NODE_ENV==='production')
+   if(process.env.NODE_ENV==='production')
 {
   app.use(express.static('frontend/build'));
-  app.get('*',(req,res)=>{
+  app.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'frontend','build','index.html'))
   })
 }
+  
+
+const port=process.env.PORT||5000;
+
+
 
 app.listen(port,()=>{
     console.log("server is up at port "+port)
