@@ -8,8 +8,13 @@ img.large{
 
 }
 .col-6{
-   flex:2 1 25rem;
 
+  
+
+  }
+  .col-4{
+    flex:1 1 25rem;
+      border:0.1rem solid black;
   }
   
   .col-3{

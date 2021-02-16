@@ -14,11 +14,12 @@ import CartScreen from './Screen/CartScreen';
 import RegisterForm from './Screen/register';
 import ShippingScreen from './Screen/Shipping';
 import OrderScreen from './Screen/orderScreen';
-
+import OrderDetails from './Screen/orderDetails'
+import OrderHistory from './Screen/orderHistory';
 const Routes=()=>{
   const userSignin=useSelector(state=>state.userSignin)
   const {userInfo}=userSignin;
-  console.log(userInfo)
+ 
   return(
 <BrowserRouter>
   <div className="our-container">
@@ -32,6 +33,8 @@ const Routes=()=>{
        <Route path="/register" component={RegisterForm} exact={true}/>
        <Route path="/shipping" component={ShippingScreen} exact={true}/>
        <Route path="/orderScreen" component={OrderScreen} exact={true}/>
+       <Route path="/orderDetails/:_id" component={OrderDetails} exact={true}></Route>
+       <Route path="/orderHistory" component={OrderHistory} exact={true}/>
     </Switch>
     <Footer/>
   </div>

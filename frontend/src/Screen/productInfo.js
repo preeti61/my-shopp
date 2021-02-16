@@ -2,6 +2,7 @@
 import {useEffect, useState} from 'react';
 import Rating from '../MainPage/rating';
 import {useSelector,useDispatch} from 'react-redux';
+import {Link} from 'react-router-dom';
 import { detailsProduct } from '../actions/product';
 import Message from '../MainPage/Message';
 
@@ -23,7 +24,10 @@ const ProductInfo=(props)=>{
         }
     return(
         <div>
+            
             <main className="row center">
+                <div className="darkBlueYellow"> <Link   to="/"><h1>Back to Main Page</h1></Link></div>
+           
             <div className="row top">
                <div className="col-6">
                     <img className="large" src={image}/>

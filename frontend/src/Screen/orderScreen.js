@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {createOrder} from '../actions/order'
 export default(props)=>{
     const shipping=useSelector((state)=>state.cartInfo.ShippingAddress);
-    console.log(shipping)
+    
     const cartInfo=useSelector((state)=>state.cartInfo);
     const {cartItem}=cartInfo;
     let sum=0;

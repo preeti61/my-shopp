@@ -5,22 +5,23 @@ const {isAuth}=require('../utils.js')
 const orderRouter=express.Router();
 orderRouter.post('/',isAuth,async(req,res)=>{
       
-   
+  
     try{
         if(req.body.orderItems.length===0)
         {
           throw new Error('Cart is empty');
         }
-    
+         
         else{
             const order=new Order({
                 orderItems:req.body.orderItems,
                 shippingAddress:req.body.shippingAddress,
+                totalPrice:req.body.totalPrice,
                 user:req.user._id,
     
                 
             })
-           
+             console.log(order)
             const createdOrder=await order.save();
            
             res.send({message:"New order Created"})
@@ -48,7 +49,5 @@ orderRouter.get('/seed',isAuth,async(req,res)=>{
     
     
 })
-{
 
-}
 module.exports=orderRouter;

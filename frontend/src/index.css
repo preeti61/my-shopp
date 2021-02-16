@@ -143,3 +143,8 @@ li{
 .inline{
   display: inline;
 }
+.darkBlueYellow
+{
+  color: #203040;
+  background-color: yellow;
+}

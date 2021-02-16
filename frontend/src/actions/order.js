@@ -5,7 +5,8 @@ import Axios from 'axios';
         type:'ORDER_CREATE_REQUEST'
     })
     try{
-        const {userSignin:{userInfo}}=getState()
+        const {userSignin:{userInfo}}=getState();
+        console.log(order)
         const {data}=await Axios.post('/api/order',order,{
             headers:{
                 Authorization:`Bearer ${userInfo.token}`
@@ -37,7 +38,7 @@ import Axios from 'axios';
                 Authorization:`Bearer ${userInfo.token}`
             },
         })
-        console.log(data)
+      
         dispatch({
             type:'FETCH_ORDER_SUCCESS',
             payload:data
